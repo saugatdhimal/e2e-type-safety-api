@@ -4,7 +4,7 @@ import {createServer} from 'node:http'
 import {schema} from './schema';
 
 
-const port = Number(process.env.API_PORT) || 4000
+const port = Number(process.env.PORT) || 4000
 
 // Create a Yoga instance with a GraphQL schema.
 const yoga = createYoga({schema})
